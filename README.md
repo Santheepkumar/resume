@@ -29,6 +29,15 @@ This repository contains role-specialized, ATS-optimized, and recruiter-ready re
 
 ---
 
+## Universal Common Cover Letter
+*Human-written, elegant, versatile cover letter adaptable for all Senior/Staff/Lead engineering applications.*
+
+- **DOCX (Word)**: [`2026-09-22_Common_Cover_Letter_Santheepkumar_V.docx`](./2026-09-22_Common_Cover_Letter_Santheepkumar_V.docx)
+- **Markdown**: [`2026-09-22_Common_Cover_Letter_Santheepkumar_V.md`](./2026-09-22_Common_Cover_Letter_Santheepkumar_V.md)
+- **HTML (Print-to-PDF)**: [`2026-09-22_Common_Cover_Letter_Santheepkumar_V.html`](./2026-09-22_Common_Cover_Letter_Santheepkumar_V.html)
+
+---
+
 ## Key Differentiators & Highlights
 
 - **End-to-End Ownership**: Whiteboard architecture, reactive frontends (React/Next.js), backend microservices (Node/NestJS/Go), cloud infrastructure (AWS/GCP/Docker/K8s), and automated CI/CD pipelines (GitHub Actions/Bitbucket Pipelines).
@@ -50,6 +59,9 @@ python3 generate_dual_docx.py
 
 # Generate the Staff Software Engineer Word resume:
 python3 generate_docx.py
+
+# Generate the Universal Common Cover Letter Word document:
+python3 generate_cover_letter_docx.py
 ```
 
 ---
