@@ -6,23 +6,34 @@ This repository contains role-specialized, ATS-optimized, and recruiter-ready re
 
 ## Resume Versions
 
-### 1. Technical Lead (`Tech Lead / Staff Full-Stack & Cloud Architect`)
+### 1. Principal Software Engineer (`Enterprise Systems Architect & Technical Leader`)
+*Tailored for Enterprise Systems Architecture, Multi-Pod Governance, Cloud Cost Optimization, Strategic System Design, and Org-Wide Mentorship.*
+
+- **PDF (Direct Download)**: [`2026-09-22_Principal_Software_Engineer_Resume_Santheepkumar_V.pdf`](./2026-09-22_Principal_Software_Engineer_Resume_Santheepkumar_V.pdf)
+- **DOCX (Word)**: [`2026-09-22_Principal_Software_Engineer_Resume_Santheepkumar_V.docx`](./2026-09-22_Principal_Software_Engineer_Resume_Santheepkumar_V.docx)
+- **Markdown (ATS-Optimized)**: [`2026-09-22_Principal_Software_Engineer_Resume_Santheepkumar_V.md`](./2026-09-22_Principal_Software_Engineer_Resume_Santheepkumar_V.md)
+- **HTML (Print-to-PDF)**: [`2026-09-22_Principal_Software_Engineer_Resume_Santheepkumar_V.html`](./2026-09-22_Principal_Software_Engineer_Resume_Santheepkumar_V.html)
+
+### 2. Technical Lead (`Tech Lead / Staff Full-Stack & Cloud Architect`)
 *Tailored for Engineering Leadership, Architectural Governance, Distributed Systems, Cloud Infrastructure & CI/CD standards, Team Mentorship, and Engineering Velocity.*
 
+- **PDF (Direct Download)**: [`2026-09-22_Technical_Lead_Resume_Santheepkumar_V.pdf`](./2026-09-22_Technical_Lead_Resume_Santheepkumar_V.pdf)
 - **DOCX (Word)**: [`2026-09-22_Technical_Lead_Resume_Santheepkumar_V.docx`](./2026-09-22_Technical_Lead_Resume_Santheepkumar_V.docx)
 - **Markdown (ATS-Optimized)**: [`2026-09-22_Technical_Lead_Resume_Santheepkumar_V.md`](./2026-09-22_Technical_Lead_Resume_Santheepkumar_V.md)
 - **HTML (Print-to-PDF)**: [`2026-09-22_Technical_Lead_Resume_Santheepkumar_V.html`](./2026-09-22_Technical_Lead_Resume_Santheepkumar_V.html)
 
-### 2. Forward Deployed Engineer (`FDE / Enterprise Solutions Architect`)
+### 3. Forward Deployed Engineer (`FDE / Enterprise Solutions Architect`)
 *Tailored for Customer-Facing Technical Delivery, Rapid Prototyping & MVP Execution (4x speed), Edge & IoT Hardware Integrations, and 0-to-1 Deployment.*
 
+- **PDF (Direct Download)**: [`2026-09-22_Forward_Deployed_Engineer_Resume_Santheepkumar_V.pdf`](./2026-09-22_Forward_Deployed_Engineer_Resume_Santheepkumar_V.pdf)
 - **DOCX (Word)**: [`2026-09-22_Forward_Deployed_Engineer_Resume_Santheepkumar_V.docx`](./2026-09-22_Forward_Deployed_Engineer_Resume_Santheepkumar_V.docx)
 - **Markdown (ATS-Optimized)**: [`2026-09-22_Forward_Deployed_Engineer_Resume_Santheepkumar_V.md`](./2026-09-22_Forward_Deployed_Engineer_Resume_Santheepkumar_V.md)
 - **HTML (Print-to-PDF)**: [`2026-09-22_Forward_Deployed_Engineer_Resume_Santheepkumar_V.html`](./2026-09-22_Forward_Deployed_Engineer_Resume_Santheepkumar_V.html)
 
-### 3. Staff Software Engineer (`End-to-End Solutions Architect`)
+### 4. Staff Software Engineer (`End-to-End Solutions Architect`)
 *General executive version balancing full-stack development, cloud architecture, and end-to-end delivery.*
 
+- **PDF (Direct Download)**: [`2026-09-22_Staff_Software_Engineer_Resume_Santheepkumar_V.pdf`](./2026-09-22_Staff_Software_Engineer_Resume_Santheepkumar_V.pdf)
 - **DOCX (Word)**: [`2026-09-22_Staff_Software_Engineer_Resume_Santheepkumar_V.docx`](./2026-09-22_Staff_Software_Engineer_Resume_Santheepkumar_V.docx)
 - **Markdown (ATS-Optimized)**: [`2026-09-22_Staff_Software_Engineer_Resume_Santheepkumar_V.md`](./2026-09-22_Staff_Software_Engineer_Resume_Santheepkumar_V.md)
 - **HTML (Print-to-PDF)**: [`2026-09-22_Staff_Software_Engineer_Resume_Santheepkumar_V.html`](./2026-09-22_Staff_Software_Engineer_Resume_Santheepkumar_V.html)
