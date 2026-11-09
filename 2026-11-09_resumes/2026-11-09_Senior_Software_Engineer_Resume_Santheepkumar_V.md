@@ -97,6 +97,10 @@ I bring true full-lifecycle ownership to every team I join: building performant 
 - Architected high-concurrency appointment booking widgets, e-commerce shop apps, and microservices backends integrated with Boulevard API, Redis caching, Sentry monitoring, and AWS infrastructure sustaining 99.9% uptime.
 - **Tech Stack**: React, Next.js, Node.js, NestJS, Redis, Microservices, AWS, Vercel, Bitbucket Pipelines, Sentry, Boulevard API
 
+### **Additional Production Platforms & Enterprise Deliveries (10+ End-to-End Systems Shipped)** | *Team Lead, Principal & Senior Engineer (2019 – 2025)*
+- Beyond the flagship systems above, architected, led, and shipped numerous production platforms across Healthcare, B2B SaaS, E-Commerce, CRM, and CI/CD Automation—including Mobilab2u (healthcare appointment & bloodwork scheduling microservices platform on AWS ECS), Nest NCER (entrepreneur sustainable management B2B SaaS with real-time analytics dashboards), Project Gen (enterprise digital platform), The Lash Lounge (national beauty chain booking platform), Vmeals (automated CRM & subscription customization platform), Tamil Mart (omnichannel e-commerce web & iOS/Android mobile app), AMS (CI/CD release & Playwright test automation platform), HOD Ecom PWA (reusable Next.js + Magento storefront framework replacing ScandiPWA), Haladoc (B2B doctor appointment web & mobile platform), and Medisouq (pharmaceutical e-commerce marketplace).
+- **Tech Stack**: NestJS, Next.js, React, React Native, Expo, Node.js, Express, PostgreSQL, MongoDB, Redis, Magento GraphQL, Apollo, ScandiPWA, Playwright, Docker, AWS ECS, Vercel, GitHub Actions, Bitbucket Pipelines
+
 ---
 
 ## EDUCATION

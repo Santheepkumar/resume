@@ -104,6 +104,14 @@ ENTERPRISE_PROJECTS = [
     }
 ]
 
+ADDITIONAL_PROJECTS_NOTE = {
+    "title": "Additional Production Platforms & Enterprise Deliveries (10+ End-to-End Systems Shipped)",
+    "role_or_domain": "Team Lead, Principal & Senior Engineer",
+    "date": "2019 – 2025",
+    "desc": "Beyond the flagship systems above, architected, led, and shipped numerous production platforms across Healthcare, B2B SaaS, E-Commerce, CRM, and CI/CD Automation—including Mobilab2u (healthcare appointment & bloodwork scheduling microservices platform on AWS ECS), Nest NCER (entrepreneur sustainable management B2B SaaS with real-time analytics dashboards), Project Gen (enterprise digital platform), The Lash Lounge (national beauty chain booking platform), Vmeals (automated CRM & subscription customization platform), Tamil Mart (omnichannel e-commerce web & iOS/Android mobile app), AMS (CI/CD release & Playwright test automation platform), HOD Ecom PWA (reusable Next.js + Magento storefront framework replacing ScandiPWA), Haladoc (B2B doctor appointment web & mobile platform), and Medisouq (pharmaceutical e-commerce marketplace).",
+    "stack": "NestJS, Next.js, React, React Native, Expo, Node.js, Express, PostgreSQL, MongoDB, Redis, Magento GraphQL, Apollo, ScandiPWA, Playwright, Docker, AWS ECS, Vercel, GitHub Actions, Bitbucket Pipelines"
+}
+
 def get_experiences(role_variant):
     # Role-specific framing for Tuna, Science & Humans, Heady, HOD Digitals, Skematix
     return [
@@ -341,6 +349,11 @@ def generate_resume_md(cfg):
         lines.append(f"- **Tech Stack**: {proj['stack']}")
         lines.append("")
 
+    lines.append(f"### **{ADDITIONAL_PROJECTS_NOTE['title']}** | *{ADDITIONAL_PROJECTS_NOTE['role_or_domain']} ({ADDITIONAL_PROJECTS_NOTE['date']})*")
+    lines.append(f"- {ADDITIONAL_PROJECTS_NOTE['desc']}")
+    lines.append(f"- **Tech Stack**: {ADDITIONAL_PROJECTS_NOTE['stack']}")
+    lines.append("")
+
     lines.extend([
         "---",
         "",
@@ -395,6 +408,12 @@ def generate_resume_html(cfg):
           <div class="project-tech">{p['stack']}</div>
         </div>"""
         for p in ENTERPRISE_PROJECTS
+    ] + [
+        f"""        <div class="project-card" style="grid-column: 1 / -1;">
+          <div class="project-title">{ADDITIONAL_PROJECTS_NOTE['title']}</div>
+          <div class="project-desc">{ADDITIONAL_PROJECTS_NOTE['desc']}</div>
+          <div class="project-tech">{ADDITIONAL_PROJECTS_NOTE['stack']}</div>
+        </div>"""
     ])
 
     return f"""<!DOCTYPE html>
@@ -1050,7 +1069,7 @@ def build_resume_docx_body(cfg):
 
     # KEY ENTERPRISE PROJECTS
     body.append(make_section_header("KEY ENTERPRISE PROJECTS & PRODUCTION DEPLOYMENTS"))
-    for proj in ENTERPRISE_PROJECTS:
+    for proj in ENTERPRISE_PROJECTS + [ADDITIONAL_PROJECTS_NOTE]:
         body.append(make_job_header(proj["title"], proj["role_or_domain"], proj["date"]))
         body.append(make_bullet(proj["desc"]))
         body.append(make_bullet([
