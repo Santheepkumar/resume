@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santheepkumar Veerasamy - Staff Software Engineer | Solutions Architect</title>
+  <style>
+    :root {
+      --primary: #1e293b;
+      --accent: #0f766e;
+      --accent-dark: #115e59;
+      --text: #334155;
+      --text-dark: #0f172a;
+      --text-light: #64748b;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      color: var(--text);
+      background-color: var(--bg);
+      padding: 30px 16px;
+    }
+
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 44px 50px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      border-radius: 8px;
+    }
+
+    /* Action bar for screen view */
+    .action-bar {
+      max-width: 880px;
+      margin: 0 auto 16px auto;
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent);
+      color: white;
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn:hover {
+      background: var(--accent-dark);
+    }
+
+    /* Header */
+    header {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--primary);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      font-size: 13px;
+      color: var(--text-light);
+    }
+
+    .contact-bar a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-bar a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .contact-bar span {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .separator {
+      color: #cbd5e1;
+    }
+
+    /* Section Styling */
+    section {
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 4px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    p {
+      font-size: 13.5px;
+      color: var(--text);
+      margin-bottom: 8px;
+      text-align: justify;
+    }
+
+    /* Competencies Grid */
+    .skills-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      font-size: 13px;
+    }
+
+    .skill-item {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      line-height: 1.45;
+    }
+
+    .skill-title {
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .skill-desc {
+      color: var(--text);
+    }
+
+    /* Experience Items */
+    .exp-item {
+      margin-bottom: 16px;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+
+    .role-company {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .role-company span {
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .exp-date {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-light);
+      font-variant-numeric: tabular-nums;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      position: relative;
+      padding-left: 18px;
+      font-size: 13px;
+      line-height: 1.48;
+      margin-bottom: 5px;
+      color: var(--text);
+    }
+
+    li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    li strong {
+      color: var(--text-dark);
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .project-card {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px 12px;
+    }
+
+    .project-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 4px;
+    }
+
+    .project-desc {
+      font-size: 12px;
+      color: var(--text);
+      line-height: 1.4;
+      margin-bottom: 6px;
+      text-align: left;
+    }
+
+    .project-tech {
+      font-size: 11.5px;
+      color: var(--accent-dark);
+      font-weight: 600;
+    }
+
+    /* Highlight Banner for Straw Hat Devs */
+    .highlight-card {
+      background: #f0fdfa;
+      border-left: 4px solid var(--accent);
+      padding: 12px 16px;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 14px;
+    }
+
+    .highlight-card h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--accent-dark);
+      margin-bottom: 4px;
+    }
+
+    .highlight-card p {
+      margin-bottom: 6px;
+      font-size: 13px;
+    }
+
+    /* Education */
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 13px;
+    }
+
+    .edu-degree {
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .edu-school {
+      color: var(--text);
+    }
+
+    .edu-year {
+      color: var(--text-light);
+      font-weight: 600;
+    }
+
+    /* Print styling */
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+
+      .action-bar {
+        display: none !important;
+      }
+
+      .container {
+        padding: 0;
+        box-shadow: none;
+        max-width: 100%;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit !important;
+      }
+
+      .exp-item {
+        break-inside: avoid;
+      }
+
+      .project-card {
+        break-inside: avoid;
+        background: #fafafa;
+        border: 1px solid #ddd;
+      }
+
+      section {
+        margin-bottom: 18px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        padding: 24px 20px;
+      }
+      .skill-item {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+      .exp-header {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="action-bar">
+    <button class="btn" onclick="window.print()">
+      🖨️ Print / Save as PDF
+    </button>
+  </div>
+
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>Santheepkumar Veerasamy</h1>
+      <div class="subtitle">Staff Software Engineer | Full-Stack & Cloud Solutions Architect</div>
+      <div class="contact-bar">
+        <span>+91 86676 62978</span>
+        <span class="separator">•</span>
+        <span><a href="mailto:devsantheep@gmail.com">devsantheep@gmail.com</a></span>
+        <span class="separator">•</span>
+        <span><a href="https://linkedin.com/in/santheepkumar" target="_blank">linkedin.com/in/santheepkumar</a></span>
+        <span class="separator">•</span>
+        <span><a href="https://github.com/Santheepkumar" target="_blank">github.com/Santheepkumar</a></span>
+        <span class="separator">•</span>
+        <span><a href="https://strawhatdevs.com" target="_blank"><strong>strawhatdevs.com</strong></a></span>
+        <span class="separator">•</span>
+        <span><a href="https://youtube.com/@StrawHatDevs" target="_blank"><strong>YouTube (@StrawHatDevs)</strong></a></span>
+        <span class="separator">•</span>
+        <span><a href="https://sk.strawhatdevs.com" target="_blank">sk.strawhatdevs.com</a></span>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+      <h2>Professional Summary</h2>
+      <p>
+        Results-driven <strong>Staff Software Engineer and End-to-End Solutions Architect</strong> with <strong>7+ years of experience</strong> designing, building, and deploying mission-critical systems across enterprise and high-growth environments. Comprehensive hands-on mastery spanning frontend platforms, distributed microservices backends, cloud infrastructure provisioning, and automated CI/CD pipelines. Proven track record of taking complex products from initial whiteboard architecture through production launch at 4x speed—including compressing an 8-month enterprise MVP into 2 months as a sole contributor. Founder and Chief Architect of <strong>Straw Hat Devs</strong> (<code>strawhatdevs.com</code>) and technical educator with <strong>200+ architecture and programming videos</strong>, demonstrating deep domain authority in system design, distributed systems, and modern cloud ecosystems. Experienced technical leader who establishes engineering rigor, mentors cross-functional teams, and leverages AI-assisted development workflows to maximize velocity and code quality.
+      </p>
+    </section>
+
+    <!-- Core Competencies -->
+    <section>
+      <h2>Core Technical Competencies</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <span class="skill-title">Cloud & DevOps / CI/CD:</span>
+          <span class="skill-desc">AWS (ECS, Lambda, S3, RDS, CloudFront, IAM), GCP, Docker, Kubernetes, GitHub Actions, Bitbucket Pipelines, Jenkins, Vercel, Infrastructure as Code (IaC), Sentry, Axiom, Linux/Unix Administration</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-title">Architecture & Distributed:</span>
+          <span class="skill-desc">End-to-End System Design, Microservices, Event-Driven Architecture, RESTful APIs, GraphQL, Monorepos (Turborepo/Nx), IoT & Hardware Peripherals, Caching Strategies (Redis), Message Brokers (Kafka, RabbitMQ), Zero-Downtime Deployments</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-title">Frontend Engineering:</span>
+          <span class="skill-desc">React, Next.js (App & Pages Router), TypeScript, JavaScript (ES6+), React Native, Expo, Tailwind CSS, State Management (Zustand, Redux), Performance Optimization, Core Web Vitals, Responsive Design</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-title">Backend & Data Engineering:</span>
+          <span class="skill-desc">Node.js, NestJS, Go (Golang), Express.js, PostgreSQL, MongoDB, Supabase, TypeORM, Prisma, Mongoose, Data Modeling, Transaction Management, Database Indexing & Query Tuning</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-title">Testing & Quality:</span>
+          <span class="skill-desc">Playwright, Jest, React Testing Library, End-to-End Test Automation, Static Code Analysis, Automated Quality Gates</span>
+        </div>
+        <div class="skill-item">
+          <span class="skill-title">Leadership & Practices:</span>
+          <span class="skill-desc">End-to-End Product Ownership, Technical Mentorship & Code Reviews, Stakeholder Management, Rapid Prototyping & MVP Delivery, AI-Assisted Development & LLM Integration</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder & Developer Community Highlight -->
+    <section>
+      <h2>Founder, Creator & Developer Community</h2>
+      <div class="highlight-card">
+        <h3>Founder & Chief Architect | Straw Hat Devs (<a href="https://strawhatdevs.com" target="_blank">strawhatdevs.com</a>)</h3>
+        <p>
+          Architected and deployed a modern developer learning platform from scratch using Next.js (App Router), Supabase, PostgreSQL, Sanity CMS, and Axiom, managed with automated CI/CD pipelines. Created real-world project curricula and courses empowering developers worldwide to master production-grade software engineering and system architecture.
+        </p>
+        <p style="margin-bottom: 0;">
+          <strong>YouTube Creator (@StrawHatDevs):</strong> Published <strong>200+ in-depth videos</strong> on software architecture, microservices, cloud deployments, full-stack frameworks, and distributed system patterns, fostering an engaged global engineering community.
+        </p>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section>
+      <h2>Professional Experience</h2>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="role-company">Staff Engineer <span>| Tuna Software Solution</span></div>
+          <div class="exp-date">Jun 2025 – Present</div>
+        </div>
+        <ul>
+          <li><strong>End-to-End Ownership:</strong> Spearheaded architecture, cloud infrastructure, backend microservices, and frontend platforms across two concurrent enterprise product initiatives, delivering releases ahead of target deadlines.</li>
+          <li><strong>Pony Up Retail Kiosk & Cloud Platform:</strong> Architected and built an Android self-service kiosk using React Native/Expo integrated with hardware peripherals (payment terminals, thermal receipt printers, cash drawers) in high-traffic retail environments.</li>
+          <li><strong>Web Migration & Platform Modernization:</strong> Led the strategic migration of the kiosk infrastructure into a modern, cloud-hosted web platform, eliminating deployment friction and achieving cross-device operational compatibility.</li>
+          <li><strong>DevOps & Engineering Excellence:</strong> Established automated CI/CD pipelines (GitHub Actions/Docker), branch protection rules, automated test runners, and standardized code review practices, boosting team delivery velocity by 35% and reducing defect escapes.</li>
+          <li><strong>Stakeholder Alignment:</strong> Acted as principal technical authority interfacing with product stakeholders to translate business goals into scalable technical specifications and execution roadmaps.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="role-company">Senior Software Engineer <span>| Heady</span></div>
+          <div class="exp-date">May 2023 – Jun 2025</div>
+        </div>
+        <ul>
+          <li><strong>Enterprise Technical Leadership:</strong> Served as lead engineer and client-facing architect for tier-1 enterprise accounts (HeyDay Skin Care, Chuck E. Cheese, The Lash Lounge), translating high-level business goals into resilient production applications.</li>
+          <li><strong>Chuck E. Cheese Web Platform MVP:</strong> Engineered and deployed an end-to-end customer experience web platform with QR code interactions as a sole contributor. Compressed an <strong>8-month estimated project timeline into 2 months (75% timeline reduction)</strong>.</li>
+          <li><strong>HeyDay Skin Care Ecosystem:</strong> Architected a microservices-based booking and eCommerce platform integrated with Boulevard API, Redis caching, and resilient AWS infrastructure, ensuring 99.9% uptime during peak seasonal booking spikes.</li>
+          <li><strong>The Lash Lounge & Vmeals:</strong> Delivered high-conversion booking engines and custom CRM subscription systems using Next.js, Node.js, and automated Bitbucket/GitHub Actions deployment pipelines to AWS and Vercel.</li>
+          <li><strong>AI-Assisted Workflows & Mentorship:</strong> Pioneered AI-assisted coding and testing workflows; mentored 6+ junior and mid-level engineers in distributed system design, clean architecture, and rapid iterative delivery.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="role-company">Principal Software Engineer <span>| HOD Digitals</span></div>
+          <div class="exp-date">Nov 2022 – May 2023</div>
+        </div>
+        <ul>
+          <li><strong>Technical Direction & Architecture:</strong> Directed technical roadmap and system architecture across multiple concurrent client systems, ensuring alignment between engineering deliverables and business ROI.</li>
+          <li><strong>Scalability & Infrastructure:</strong> Designed decoupled microservices, database schemas (PostgreSQL/MongoDB), and cloud deployment blueprints that lowered cloud infrastructure costs while improving horizontal scalability under traffic surges.</li>
+          <li><strong>Delivery Governance:</strong> Served as bridge between business stakeholders and engineering pods, managing sprint allocations, proactively mitigating architectural risks, and ensuring on-time delivery.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="role-company">Software Engineer <span>| HOD Digitals</span></div>
+          <div class="exp-date">Sep 2021 – Nov 2022</div>
+        </div>
+        <ul>
+          <li><strong>Full-Stack Development:</strong> Engineered scalable web applications from requirements analysis through production deployment across diverse client sectors.</li>
+          <li><strong>Feature Velocity:</strong> Partnered directly with product teams to build performant RESTful APIs, modern reactive UIs, and automated data pipelines based on direct client feedback.</li>
+          <li><strong>CI/CD Collaboration:</strong> Implemented automated testing scripts and pipeline integration, maintaining high code coverage and zero-downtime deployments.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="role-company">Full Stack Developer <span>| Skematix Technologies</span></div>
+          <div class="exp-date">Dec 2019 – Sep 2021</div>
+        </div>
+        <ul>
+          <li><strong>Full-Stack Product Delivery:</strong> Built, optimized, and maintained multiple responsive client web applications utilizing React, Node.js, Express, and relational/document databases.</li>
+          <li><strong>End-to-End Ownership:</strong> Managed full software development lifecycle from initial database schema design to frontend UI implementation, performance tuning, and server provisioning.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Featured Systems & Deployments Grid -->
+    <section>
+      <h2>Featured Systems & Architectural Highlights</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-title">Straw Hat Devs Learning Platform</div>
+          <div class="project-desc">Complete end-to-end edtech platform with course management, real-time user auth, video streaming, and analytics.</div>
+          <div class="project-tech">Next.js • TypeScript • PostgreSQL • Supabase • Sanity • Axiom • Vercel CI/CD</div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Pony Up Self-Service IoT Retail Kiosk</div>
+          <div class="project-desc">Hardware-integrated Android kiosk system handling point-of-sale payments, barcode/QR scanning, cash drawers, and thermal receipt printing.</div>
+          <div class="project-tech">React Native • Expo • Android Kiosk Mode • IoT Peripherals • REST APIs</div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Chuck E. Cheese Web Platform</div>
+          <div class="project-desc">Frictionless QR-code-driven customer interaction web app featuring dynamic menus and mobile responsiveness. Built in 2 months.</div>
+          <div class="project-tech">Next.js • React • Tailwind CSS • CloudFront/AWS • Automated CI/CD</div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">HeyDay Skin Care Booking & Shop Engine</div>
+          <div class="project-desc">High-concurrency booking widget and eCommerce app integrating third-party APIs (Boulevard), real-time inventory, and Redis caching.</div>
+          <div class="project-tech">React • Node.js • NestJS • Redis • AWS ECS/Lambda • Sentry • Boulevard API</div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Vmeals CRM & Subscription Engine</div>
+          <div class="project-desc">Automated meal subscription workflow system with custom plan builders, billing cycles, and automated customer notifications.</div>
+          <div class="project-tech">Next.js • Node.js • Express • PostgreSQL • AWS • GitHub Actions</div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">AMS Test Automation & Release Platform</div>
+          <div class="project-desc">End-to-end regression automation suite integrated with Bitbucket Pipelines to validate pre-release mobile and web builds prior to app store release.</div>
+          <div class="project-tech">Playwright • TypeScript • Bitbucket Pipelines • Docker</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2>Education</h2>
+      <div class="edu-item">
+        <div>
+          <span class="edu-degree">Bachelor of Engineering (B.E.) — Computer Science & Engineering</span> • 
+          <span class="edu-school">Anna University, Tamil Nadu, India</span>
+        </div>
+        <div class="edu-year">2015 – 2019</div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>

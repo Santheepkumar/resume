@@ -3,7 +3,8 @@ import zipfile
 import xml.etree.ElementTree as ET
 
 DATE_PREFIX = "2026-11-09"
-TEMPLATE_DOCX = "2026-09-22_Original_Resume_Santheepkumar_V.docx"
+OUT_DIR = "2026-11-09_resumes"
+TEMPLATE_DOCX = "2026-09-22_resumes/2026-09-22_Original_Resume_Santheepkumar_V.docx"
 
 W_NS = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 W14_NS = "http://schemas.microsoft.com/office/word/2010/wordml"
@@ -1065,7 +1066,7 @@ COVER_LETTER_PARAS = [
 ]
 
 def generate_cover_letter_all():
-    base = f"{DATE_PREFIX}_Common_Cover_Letter_Santheepkumar_V"
+    base = os.path.join(OUT_DIR, f"{DATE_PREFIX}_Common_Cover_Letter_Santheepkumar_V")
     # MD
     md_content = f"""# Santheepkumar Veerasamy
 **Staff Software Engineer | Principal / Technical Lead | Full-Stack & Cloud Architect**  
@@ -1250,7 +1251,7 @@ Staff / Lead Software Engineer & Full-Stack Cloud Architect
 # ==============================================================================
 
 def generate_linkedin_profile():
-    base = f"{DATE_PREFIX}_LinkedIn_Profile_Santheepkumar_V"
+    base = os.path.join(OUT_DIR, f"{DATE_PREFIX}_LinkedIn_Profile_Santheepkumar_V")
     md = """# LinkedIn Profile Optimization — Santheepkumar Veerasamy
 *Designed to immediately convert Technical Recruiters, Engineering Managers, VPs of Engineering, and Technical Leads across Staff, Principal, Tech Lead, Forward Deployed, and Senior Software Engineer roles.*
 
@@ -1433,15 +1434,11 @@ If you’re a hiring manager, tech lead, or recruiter looking for an engineer wh
     print(f"Generated LinkedIn Profile Guide: {base}.md and {base}.html")
 
 def main():
-    # Clean old 2026-09-22 generated files (except Original template)
-    for fname in os.listdir("."):
-        if fname.startswith("2026-09-22_") and fname != TEMPLATE_DOCX:
-            os.remove(fname)
-            print(f"Removed old version: {fname}")
+    os.makedirs(OUT_DIR, exist_ok=True)
 
-    # Generate all 5 resumes
+    # Generate all 5 resumes into OUT_DIR
     for cfg in RESUMES:
-        base = f"{DATE_PREFIX}_{cfg['slug']}_Resume_Santheepkumar_V"
+        base = os.path.join(OUT_DIR, f"{DATE_PREFIX}_{cfg['slug']}_Resume_Santheepkumar_V")
         with open(f"{base}.md", "w") as f:
             f.write(generate_resume_md(cfg))
         with open(f"{base}.html", "w") as f:
