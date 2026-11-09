@@ -578,13 +578,57 @@ def generate_resume_html(cfg):
     }}
     .edu-degree {{ font-weight: 700; color: var(--text-dark); }}
     .edu-year {{ color: var(--text-light); font-weight: 600; }}
+    @page {{
+      size: A4;
+      margin: 7mm 10.5mm;
+    }}
     @media print {{
-      body {{ background: #fff; padding: 0; }}
+      body {{ background: #fff; padding: 0; line-height: 1.28; }}
       .action-bar {{ display: none !important; }}
-      .container {{ padding: 0; box-shadow: none; max-width: 100%; }}
+      .container {{ padding: 0; box-shadow: none; max-width: 100%; border-radius: 0; }}
       a {{ text-decoration: none; color: inherit !important; }}
-      .exp-item, .project-card {{ break-inside: avoid; }}
-      section {{ margin-bottom: 14px; }}
+      header {{ padding-bottom: 6px; margin-bottom: 7px; }}
+      h1 {{ font-size: 21.5px; margin-bottom: 1px; }}
+      .subtitle {{ font-size: 11.8px; margin-bottom: 4px; }}
+      .contact-bar {{ font-size: 10.5px; gap: 2px 8px; }}
+      section {{ margin-bottom: 6.5px; }}
+      h2 {{
+        font-size: 11.2px;
+        margin-bottom: 4px;
+        padding-bottom: 1.5px;
+        break-after: avoid-page;
+        page-break-after: avoid;
+      }}
+      p {{ font-size: 10.8px; margin-bottom: 4px; line-height: 1.27; }}
+      .skills-grid {{ gap: 2px; font-size: 10.7px; }}
+      .skill-item {{ grid-template-columns: 170px 1fr; line-height: 1.24; }}
+      .exp-item {{ margin-bottom: 5.5px; break-inside: auto; page-break-inside: auto; }}
+      .exp-header {{
+        margin-bottom: 1.5px;
+        break-after: avoid-page;
+        page-break-after: avoid;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }}
+      .role-company {{ font-size: 11.8px; }}
+      .exp-date {{ font-size: 10.5px; }}
+      li {{
+        font-size: 10.7px;
+        line-height: 1.25;
+        margin-bottom: 1.5px;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }}
+      .projects-grid {{ gap: 5.5px; }}
+      .project-card {{
+        padding: 5.5px 8px;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }}
+      .project-title {{ font-size: 11px; margin-bottom: 1.5px; }}
+      .project-desc {{ font-size: 10.2px; line-height: 1.23; margin-bottom: 2.5px; }}
+      .project-tech {{ font-size: 9.7px; line-height: 1.2; }}
+      .edu-item {{ font-size: 10.8px; break-inside: avoid; page-break-inside: avoid; }}
     }}
   </style>
 </head>
@@ -1170,10 +1214,19 @@ Staff / Lead Software Engineer & Full-Stack Cloud Architect
     .signature-name {{ font-size: 16px; font-weight: 800; color: var(--primary); margin-top: 10px; }}
     .signature-title {{ font-size: 13px; color: var(--accent); font-weight: 600; margin-bottom: 4px; }}
     .signature-contacts {{ font-size: 12.5px; color: var(--text-light); }}
+    @page {{
+      size: A4;
+      margin: 14mm 16mm;
+    }}
     @media print {{
-      body {{ background: #fff; padding: 0; }}
+      body {{ background: #fff; padding: 0; line-height: 1.5; }}
       .action-bar {{ display: none !important; }}
       .container {{ padding: 0; box-shadow: none; max-width: 100%; }}
+      header {{ padding-bottom: 12px; margin-bottom: 18px; }}
+      .meta-box {{ margin-bottom: 16px; font-size: 13px; }}
+      .salutation {{ font-size: 14px; margin-bottom: 12px; }}
+      p {{ font-size: 13px; margin-bottom: 12px; }}
+      .closing {{ margin-top: 18px; font-size: 13px; break-inside: avoid; page-break-inside: avoid; }}
     }}
   </style>
 </head>

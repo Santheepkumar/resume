@@ -64,10 +64,19 @@
     .signature-name { font-size: 16px; font-weight: 800; color: var(--primary); margin-top: 10px; }
     .signature-title { font-size: 13px; color: var(--accent); font-weight: 600; margin-bottom: 4px; }
     .signature-contacts { font-size: 12.5px; color: var(--text-light); }
+    @page {
+      size: A4;
+      margin: 14mm 16mm;
+    }
     @media print {
-      body { background: #fff; padding: 0; }
+      body { background: #fff; padding: 0; line-height: 1.5; }
       .action-bar { display: none !important; }
       .container { padding: 0; box-shadow: none; max-width: 100%; }
+      header { padding-bottom: 12px; margin-bottom: 18px; }
+      .meta-box { margin-bottom: 16px; font-size: 13px; }
+      .salutation { font-size: 14px; margin-bottom: 12px; }
+      p { font-size: 13px; margin-bottom: 12px; }
+      .closing { margin-top: 18px; font-size: 13px; break-inside: avoid; page-break-inside: avoid; }
     }
   </style>
 </head>
