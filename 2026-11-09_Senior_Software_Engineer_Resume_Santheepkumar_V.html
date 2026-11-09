@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santheepkumar Veerasamy - Senior Software Engineer | Full-Stack, Microservices, Cloud & Kubernetes</title>
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #1d4ed8;
+      --accent-dark: #1e40af;
+      --text: #334155;
+      --text-dark: #0f172a;
+      --text-light: #64748b;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.48;
+      color: var(--text);
+      background-color: var(--bg);
+      padding: 28px 16px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 40px 48px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      border-radius: 8px;
+    }
+    .action-bar {
+      max-width: 900px;
+      margin: 0 auto 14px auto;
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent);
+      color: white;
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+    .btn:hover { background: var(--accent-dark); }
+    header {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: 27px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--primary);
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+    .subtitle {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin-bottom: 9px;
+    }
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 12px;
+      font-size: 12.5px;
+      color: var(--text-light);
+    }
+    .contact-bar a { color: var(--text); text-decoration: none; font-weight: 500; }
+    .contact-bar a:hover { color: var(--accent); text-decoration: underline; }
+    .separator { color: #cbd5e1; }
+    section { margin-bottom: 18px; }
+    h2 {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 3px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 13px;
+      color: var(--text);
+      margin-bottom: 8px;
+      text-align: justify;
+    }
+    .skills-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 12.5px;
+    }
+    .skill-item {
+      display: grid;
+      grid-template-columns: 205px 1fr;
+      line-height: 1.42;
+    }
+    .skill-title { font-weight: 700; color: var(--text-dark); }
+    .skill-desc { color: var(--text); }
+    .exp-item { margin-bottom: 14px; }
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 3px;
+    }
+    .role-company { font-size: 14px; font-weight: 700; color: var(--text-dark); }
+    .role-company span { font-weight: 600; color: var(--accent); }
+    .exp-date { font-size: 12px; font-weight: 600; color: var(--text-light); }
+    ul { list-style-type: none; padding-left: 0; }
+    li {
+      position: relative;
+      padding-left: 16px;
+      font-size: 12.5px;
+      line-height: 1.45;
+      margin-bottom: 4px;
+      color: var(--text);
+    }
+    li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+    li strong { color: var(--text-dark); }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .project-card {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 9px 11px;
+    }
+    .project-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 3px;
+    }
+    .project-desc {
+      font-size: 11.8px;
+      color: var(--text);
+      line-height: 1.38;
+      margin-bottom: 5px;
+      text-align: left;
+    }
+    .project-tech {
+      font-size: 11px;
+      color: var(--accent-dark);
+      font-weight: 600;
+    }
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 12.8px;
+    }
+    .edu-degree { font-weight: 700; color: var(--text-dark); }
+    .edu-year { color: var(--text-light); font-weight: 600; }
+    @media print {
+      body { background: #fff; padding: 0; }
+      .action-bar { display: none !important; }
+      .container { padding: 0; box-shadow: none; max-width: 100%; }
+      a { text-decoration: none; color: inherit !important; }
+      .exp-item, .project-card { break-inside: avoid; }
+      section { margin-bottom: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="action-bar">
+    <button class="btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+  </div>
+  <div class="container">
+    <header>
+      <h1>Santheepkumar Veerasamy</h1>
+      <div class="subtitle">Senior Software Engineer | Full-Stack, Microservices, Cloud & Kubernetes</div>
+      <div class="contact-bar">
+        <span>+91 86676 62978</span>
+        <span class="separator">•</span>
+        <span><a href="mailto:devsantheep@gmail.com">devsantheep@gmail.com</a></span>
+        <span class="separator">•</span>
+        <span><a href="https://linkedin.com/in/santheepkumar" target="_blank">linkedin.com/in/santheepkumar</a></span>
+        <span class="separator">•</span>
+        <span><a href="https://github.com/Santheepkumar" target="_blank">github.com/Santheepkumar</a></span>
+        <span class="separator">•</span>
+        <span><a href="https://strawhatdevs.com" target="_blank"><strong>strawhatdevs.com</strong></a></span>
+        <span class="separator">•</span>
+        <span><a href="https://youtube.com/@StrawHatDevs" target="_blank"><strong>YouTube (@StrawHatDevs - 200+ Videos)</strong></a></span>
+        <span class="separator">•</span>
+        <span><a href="https://sk.strawhatdevs.com" target="_blank">sk.strawhatdevs.com</a></span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Overview</h2>
+      <p>I’m a hands-on Senior Full-Stack Software Engineer with 7+ years of experience building, scaling, and deploying production web, mobile, and cloud applications end-to-end. My programming journey started in a government school in Tamil Nadu on a 2GB RAM state-issued laptop, teaching myself to code through documentation and YouTube. Since converting my college internship into a full-time role in under 3 months in 2019 (Skematix), I’ve progressed through Senior and Principal engineering roles (HOD Digitals), led enterprise product deliveries at Heady (shipping a Chuck E. Cheese web MVP solo in 2 months vs. an 8-month estimate), and currently build mission-critical systems at Tuna Software Solution and as a Lead Software Engineer (Part-Time Contractor) at Science & Humans.</p>
+      <p style="margin-bottom: 0;">I bring true full-lifecycle ownership to every team I join: building performant frontends (React, Next.js, TypeScript, React Native), architecting backend microservices and communication layers (Node.js, NestJS, Go, Bun, PostgreSQL), implementing complete authentication/RBAC and notification systems from scratch, configuring Kubernetes (K8s) and CI/CD pipelines, and mentoring junior developers alongside Product Managers. Outside of work, I’m an active builder and educator—creator of StrawHatDevs (strawhatdevs.com + 200+ programming and architecture videos on YouTube), ChimeFlow (multi-tenant notification platform), ENVault (encrypted .env sync + Go CLI), and IncidentLens AI.</p>
+    </section>
+
+    <section>
+      <h2>Core Technical Competencies</h2>
+      <div class="skills-grid">
+        <div class="skill-item"><span class="skill-title">Cloud, K8s & DevOps:</span><span class="skill-desc">Kubernetes (K8s), Docker, AWS (ECS, Lambda, S3, RDS, CloudFront, IAM), GCP, GitHub Actions, Bitbucket Pipelines, Jenkins, Vercel, Terraform / IaC, Sentry, Axiom</span></div>
+        <div class="skill-item"><span class="skill-title">Architecture & Systems:</span><span class="skill-desc">Microservices, Inter-Service Communication, Event-Driven Systems, Clean/Hexagonal Architecture, Monorepos (Turborepo), Auth/RBAC, Notification Engines, Redis, Kafka, RabbitMQ</span></div>
+        <div class="skill-item"><span class="skill-title">Frontend Engineering:</span><span class="skill-desc">React, Next.js (App & Pages Router), TypeScript, JavaScript (ES6+), SvelteKit / Svelte 5, React Native, Expo, Tailwind CSS, State Management (Zustand, Redux)</span></div>
+        <div class="skill-item"><span class="skill-title">Backend & Languages:</span><span class="skill-desc">Node.js, NestJS, Go (Golang), Bun, Express.js, RESTful APIs, GraphQL, WebCrypto / AES-256-GCM Encryption, IoT Hardware & POS Peripherals</span></div>
+        <div class="skill-item"><span class="skill-title">Databases & Storage:</span><span class="skill-desc">PostgreSQL (Raw SQL, RLS, FTS/tsvector, SKIP LOCKED), MongoDB, Supabase, Drizzle ORM, TypeORM, Prisma, Sequelize, Mongoose, Query Tuning</span></div>
+        <div class="skill-item"><span class="skill-title">Testing, AI & Quality:</span><span class="skill-desc">Playwright, Vitest, Jest, React Testing Library, LLM RAG & Bounded Agents, Automated Eval Harnesses, CI/CD Quality Gates</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="role-company">Staff Engineer <span>| Tuna Software Solution</span></div>
+          <div class="exp-date">Jun 2025 – Present</div>
+        </div>
+        <ul>
+          <li><strong>End-to-End Architecture & Delivery: </strong>Owned full-stack architecture, cloud infrastructure, backend microservices, and frontend platforms across two concurrent enterprise initiatives, driving feature releases on schedule.</li>
+          <li><strong>Pony Up IoT Kiosk & Cloud Web Migration: </strong>Architected and delivered an Android self-service kiosk (React Native/Expo) integrating physical IoT peripherals (payment terminals, receipt printers, cash drawers), then led its rebuild as a cloud web platform to eliminate deployment friction and improve cross-device compatibility.</li>
+          <li><strong>CI/CD Automation & Engineering Standards: </strong>Established structured code review processes, automated CI/CD pipelines (GitHub Actions/Docker), and coding standards—boosting team delivery velocity by 35% and reducing production defect escapes.</li>
+          <li><strong>Stakeholder & Product Alignment: </strong>Collaborated directly with product stakeholders to translate business requirements into scalable technical solutions, acting as the primary technical point of contact.</li>
+        </ul>
+      </div>
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="role-company">Lead Software Engineer (Part-Time Contractor) <span>| Science & Humans</span></div>
+          <div class="exp-date">Jun 2025 – Present</div>
+        </div>
+        <ul>
+          <li><strong>Ground-Up Ownership & Product Planning: </strong>Contributed from the ground up with full end-to-end ownership—partnering directly with Product Managers to plan implementations, estimate modules, architect solutions, and ship production releases.</li>
+          <li><strong>Authentication, Authorization & Notification Engine: </strong>Architected and built the entire authentication and role-based authorization (RBAC) system alongside a centralized multi-channel notification system for the platform.</li>
+          <li><strong>Microservices & Communication Layer: </strong>Set up decoupled backend microservices and engineered the inter-service communication layer from scratch while resolving critical system bottlenecks and bugs to harden platform stability.</li>
+          <li><strong>Kubernetes (K8s) & DevOps Configuration: </strong>Configured and managed containerized application deployments on Kubernetes (K8s) and built automated CI/CD DevOps workflows for reliable, zero-downtime releases.</li>
+          <li><strong>Mentoring & Team Ramp-Up: </strong>Guided, onboarded, and mentored junior developers joining the project, conducting code reviews and unblocking engineering execution across modules.</li>
+        </ul>
+      </div>
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="role-company">Senior Software Engineer <span>| Heady</span></div>
+          <div class="exp-date">May 2023 – Jun 2025</div>
+        </div>
+        <ul>
+          <li><strong>Enterprise Client Leadership: </strong>Served as primary technical lead interfacing with tier-1 enterprise clients (HeyDay Skin Care, Chuck E. Cheese, The Lash Lounge), coordinating with PMs and stakeholders to define scope, set milestones, and ship production systems.</li>
+          <li><strong>Chuck E. Cheese Web MVP (75% Faster Delivery): </strong>Delivered the Chuck E. Cheese web kiosk MVP in 2 months as a solo contributor, compressing an 8-month original project timeline by 75% through focused full-stack engineering and rapid iteration.</li>
+          <li><strong>HeyDay Skin Care Microservices Ecosystem: </strong>Architected a microservices-based backend integration with Boulevard (booking platform), Redis caching, Sentry error monitoring, and AWS infrastructure sustaining 99.9% reliability.</li>
+          <li><strong>AI-Assisted Workflows & Mentorship: </strong>Mentored 6+ junior and mid-level developers on modern development practices, AI-assisted coding workflows, and architectural patterns that improved code quality and reduced regression rates.</li>
+        </ul>
+      </div>
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="role-company">Principal Software Engineer (Promoted from Senior Frontend Engineer) <span>| HOD Digitals</span></div>
+          <div class="exp-date">Sep 2021 – May 2023</div>
+        </div>
+        <ul>
+          <li><strong>Fast-Track Promotion (Senior Engineer → Principal Engineer): </strong>Joined as Senior Frontend Engineer contributing to Project Gen and concurrent client systems; promoted to Principal Software Engineer (Nov 2022) to lead technical direction and architecture across multiple product lines.</li>
+          <li><strong>E-Commerce & Scalable System Architecture: </strong>Architected and shipped full-stack e-commerce platforms (Tamil Mart web & iOS/Android mobile apps with Next.js, Magento GraphQL, React Native), CRM subscription systems (Vmeals on AWS), and Playwright CI/CD test automation (AMS).</li>
+          <li><strong>Cross-Functional Leadership & Mentorship: </strong>Oversaw project planning, system design, and cloud infrastructure decisions while acting as primary technical liaison between engineering teams and business stakeholders.</li>
+        </ul>
+      </div>
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="role-company">Full Stack Developer (Converted from Intern in <3 Months) <span>| Skematix Technologies</span></div>
+          <div class="exp-date">Dec 2019 – Sep 2021</div>
+        </div>
+        <ul>
+          <li><strong>Rapid Intern-to-Full-Time Conversion: </strong>Joined during college in 2019 as an Intern Software Engineer and earned conversion to full-time Full Stack Developer within 2–3 months due to rapid execution and deep ownership.</li>
+          <li><strong>End-to-End Web Application Delivery: </strong>Developed, optimized, and deployed multiple client-facing web applications across React, Node.js, Express, and relational/NoSQL databases from initial schema design to production hosting.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Self-Built Products, Platforms & Developer Community</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-title">ChimeFlow — Multi-Tenant Omnichannel Notification & Cadence Platform</div>
+          <div class="project-desc">Engineered a multi-tenant notification & cadence orchestration platform supporting Email (SendGrid), SMS (Twilio), and Push (Firebase FCM) using Clean/Hexagonal Architecture. Built a write-ahead delivery ledger, fair-claim background worker queues, idempotency keys, per-tenant rate limiting, suppression/consent engines, encrypted credentials at rest, and Razorpay billing.</div>
+          <div class="project-tech">Bun, TypeScript, SvelteKit / Svelte 5, PostgreSQL 17, Clerk Auth, SendGrid, Twilio, Firebase Admin, Docker, AWS</div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">ENVault — Zero-Knowledge Encrypted .env Sync Platform & Native Go CLI</div>
+          <div class="project-desc">Built an end-to-end client-encrypted team environment variable & secret synchronization platform with browser WebCrypto key derivation, atomic revision rollback, and a native cross-platform Go CLI (github.com/Santheepkumar/envault-cli) integrated with macOS Keychain, Windows Credential Manager, and Linux Secret Service.</div>
+          <div class="project-tech">Go (Golang CLI), Next.js, TypeScript, PostgreSQL 17, Drizzle ORM, WebCrypto API, Better Auth, Docker</div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">IncidentLens AI — Evidence-Grounded Incident Triage & Runbook RAG Engine</div>
+          <div class="project-desc">Designed a multi-tenant AI production incident investigator connecting Sentry telemetry with Markdown runbooks (PostgreSQL tsvector + GIN Hybrid FTS RAG), AES-256-GCM secret vault, a bounded 6-step agent loop with deterministic [ev_xxx] citation verification, FOR UPDATE SKIP LOCKED job queues, and a 35-case AI evaluation harness (93.3% root-cause accuracy).</div>
+          <div class="project-tech">TypeScript, Turborepo, Node.js, PostgreSQL (Raw SQL + RLS), Auth0 OAuth2 PKCE, LLM Tool-Calling & RAG, Vitest</div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">StrawHatDevs Platform (strawhatdevs.com) & Route-Atlas Open-Source Tooling</div>
+          <div class="project-desc">Architected strawhatdevs.com full-stack learning platform (200+ architecture/programming videos) alongside developer tools including Route-Atlas (published npm visual atlas for Next.js App Router) and SelectCheck (Tauri v2 + Cloudflare Workers AI assistant).</div>
+          <div class="project-tech">Next.js 15, React 19, TypeScript, Supabase, PostgreSQL, Sanity CMS, Tauri v2, Cloudflare Workers, Vercel CI/CD</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Key Enterprise Projects & Production Deployments</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-title">Science & Humans — Healthcare Platform & Microservices Ecosystem</div>
+          <div class="project-desc">Built core platform architecture from the ground up with full end-to-end ownership: engineered the complete authentication & RBAC authorization system, event-driven notification engine, decoupled microservices & inter-service communication layer, and production Kubernetes (K8s) + CI/CD DevOps infrastructure while mentoring junior developers.</div>
+          <div class="project-tech">TypeScript, Node.js, Microservices, Auth/RBAC, Notification System, Kubernetes (K8s), Docker, CI/CD</div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Pony Up — Android Self-Service IoT Retail Kiosk & Cloud Web Platform</div>
+          <div class="project-desc">Engineered a React Native/Expo self-service kiosk deployed in shopping malls integrating physical IoT hardware (payment terminals, thermal receipt printers, cash drawers), and subsequently led its strategic rebuild into a cloud-hosted web platform.</div>
+          <div class="project-tech">React Native, Expo, Next.js, IoT Peripherals, Android Kiosk Mode, REST APIs, Docker, GitHub Actions</div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Chuck E. Cheese — Customer Experience Web Platform (2-Month Solo MVP)</div>
+          <div class="project-desc">Rebuilt the Chuck E. Cheese kiosk into a mobile-responsive customer experience web platform enabling instant product interaction via QR code scanning—delivered the production MVP solo in 2 months vs. an 8-month original estimate (75% faster time-to-market).</div>
+          <div class="project-tech">React, Next.js, TypeScript, Tailwind CSS, QR Integration, AWS CloudFront, Automated CI/CD</div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">HeyDay Skin Care & The Lash Lounge — Enterprise Booking & Microservices</div>
+          <div class="project-desc">Architected high-concurrency appointment booking widgets, e-commerce shop apps, and microservices backends integrated with Boulevard API, Redis caching, Sentry monitoring, and AWS infrastructure sustaining 99.9% uptime.</div>
+          <div class="project-tech">React, Next.js, Node.js, NestJS, Redis, Microservices, AWS, Vercel, Bitbucket Pipelines, Sentry, Boulevard API</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="edu-item">
+        <div>
+          <span class="edu-degree">Bachelor of Engineering (B.E.) — Computer Science & Engineering</span> • 
+          <span>Anna University, Tamil Nadu, India</span>
+        </div>
+        <div class="edu-year">2015 – 2019</div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,87 +1,84 @@
-# Santheepkumar Veerasamy — Professional Resumes
+# Santheepkumar V — Executive Engineering Resume, Cover Letter & LinkedIn Suite
 
-This repository contains role-specialized, ATS-optimized, and recruiter-ready resumes for **Santheepkumar Veerasamy**, highlighting 7+ years of experience as a Staff Engineer, Technical Lead, and Forward Deployed Solutions Architect, along with the **Straw Hat Devs** ecosystem (`strawhatdevs.com` and 200+ architecture/programming videos).
+A multi-role, ATS-optimized resume, cover letter, and LinkedIn portfolio repository for **Santheepkumar V** (End-to-End Application Architect, Distributed Systems & DevOps Engineer, and Founder of **[Straw Hat Devs](https://strawhatdevs.com)**).
 
----
-
-## Resume Versions
-
-### 1. Principal Software Engineer (`Enterprise Systems Architect & Technical Leader`)
-*Tailored for Enterprise Systems Architecture, Multi-Pod Governance, Cloud Cost Optimization, Strategic System Design, and Org-Wide Mentorship.*
-
-- **PDF (Direct Download)**: [`2026-09-22_Principal_Software_Engineer_Resume_Santheepkumar_V.pdf`](./2026-09-22_Principal_Software_Engineer_Resume_Santheepkumar_V.pdf)
-- **DOCX (Word)**: [`2026-09-22_Principal_Software_Engineer_Resume_Santheepkumar_V.docx`](./2026-09-22_Principal_Software_Engineer_Resume_Santheepkumar_V.docx)
-- **Markdown (ATS-Optimized)**: [`2026-09-22_Principal_Software_Engineer_Resume_Santheepkumar_V.md`](./2026-09-22_Principal_Software_Engineer_Resume_Santheepkumar_V.md)
-- **HTML (Print-to-PDF)**: [`2026-09-22_Principal_Software_Engineer_Resume_Santheepkumar_V.html`](./2026-09-22_Principal_Software_Engineer_Resume_Santheepkumar_V.html)
-
-### 2. Technical Lead (`Tech Lead / Staff Full-Stack & Cloud Architect`)
-*Tailored for Engineering Leadership, Architectural Governance, Distributed Systems, Cloud Infrastructure & CI/CD standards, Team Mentorship, and Engineering Velocity.*
-
-- **PDF (Direct Download)**: [`2026-09-22_Technical_Lead_Resume_Santheepkumar_V.pdf`](./2026-09-22_Technical_Lead_Resume_Santheepkumar_V.pdf)
-- **DOCX (Word)**: [`2026-09-22_Technical_Lead_Resume_Santheepkumar_V.docx`](./2026-09-22_Technical_Lead_Resume_Santheepkumar_V.docx)
-- **Markdown (ATS-Optimized)**: [`2026-09-22_Technical_Lead_Resume_Santheepkumar_V.md`](./2026-09-22_Technical_Lead_Resume_Santheepkumar_V.md)
-- **HTML (Print-to-PDF)**: [`2026-09-22_Technical_Lead_Resume_Santheepkumar_V.html`](./2026-09-22_Technical_Lead_Resume_Santheepkumar_V.html)
-
-### 3. Forward Deployed Engineer (`FDE / Enterprise Solutions Architect`)
-*Tailored for Customer-Facing Technical Delivery, Rapid Prototyping & MVP Execution (4x speed), Edge & IoT Hardware Integrations, and 0-to-1 Deployment.*
-
-- **PDF (Direct Download)**: [`2026-09-22_Forward_Deployed_Engineer_Resume_Santheepkumar_V.pdf`](./2026-09-22_Forward_Deployed_Engineer_Resume_Santheepkumar_V.pdf)
-- **DOCX (Word)**: [`2026-09-22_Forward_Deployed_Engineer_Resume_Santheepkumar_V.docx`](./2026-09-22_Forward_Deployed_Engineer_Resume_Santheepkumar_V.docx)
-- **Markdown (ATS-Optimized)**: [`2026-09-22_Forward_Deployed_Engineer_Resume_Santheepkumar_V.md`](./2026-09-22_Forward_Deployed_Engineer_Resume_Santheepkumar_V.md)
-- **HTML (Print-to-PDF)**: [`2026-09-22_Forward_Deployed_Engineer_Resume_Santheepkumar_V.html`](./2026-09-22_Forward_Deployed_Engineer_Resume_Santheepkumar_V.html)
-
-### 4. Staff Software Engineer (`End-to-End Solutions Architect`)
-*General executive version balancing full-stack development, cloud architecture, and end-to-end delivery.*
-
-- **PDF (Direct Download)**: [`2026-09-22_Staff_Software_Engineer_Resume_Santheepkumar_V.pdf`](./2026-09-22_Staff_Software_Engineer_Resume_Santheepkumar_V.pdf)
-- **DOCX (Word)**: [`2026-09-22_Staff_Software_Engineer_Resume_Santheepkumar_V.docx`](./2026-09-22_Staff_Software_Engineer_Resume_Santheepkumar_V.docx)
-- **Markdown (ATS-Optimized)**: [`2026-09-22_Staff_Software_Engineer_Resume_Santheepkumar_V.md`](./2026-09-22_Staff_Software_Engineer_Resume_Santheepkumar_V.md)
-- **HTML (Print-to-PDF)**: [`2026-09-22_Staff_Software_Engineer_Resume_Santheepkumar_V.html`](./2026-09-22_Staff_Software_Engineer_Resume_Santheepkumar_V.html)
+- **Portfolio & Learning Platform**: [strawhatdevs.com](https://strawhatdevs.com)
+- **Secret Sync Platform**: [envault.strawhatdevs.com](https://envault.strawhatdevs.com)
+- **GitHub**: [github.com/Santheepkumar](https://github.com/Santheepkumar)
+- **LinkedIn**: [linkedin.com/in/santheepkumar](https://www.linkedin.com/in/santheepkumar/)
 
 ---
 
-## Universal Common Cover Letter
-*Human-written, elegant, versatile cover letter adaptable for all Senior/Staff/Lead engineering applications.*
+## Included Role-Tailored Resume Suites (`2026-11-09`)
 
-- **DOCX (Word)**: [`2026-09-22_Common_Cover_Letter_Santheepkumar_V.docx`](./2026-09-22_Common_Cover_Letter_Santheepkumar_V.docx)
-- **Markdown**: [`2026-09-22_Common_Cover_Letter_Santheepkumar_V.md`](./2026-09-22_Common_Cover_Letter_Santheepkumar_V.md)
-- **HTML (Print-to-PDF)**: [`2026-09-22_Common_Cover_Letter_Santheepkumar_V.html`](./2026-09-22_Common_Cover_Letter_Santheepkumar_V.html)
+Every resume version includes an authentic story-driven **Overview**, **6+ years of full-time engineering leadership** (including concurrent **Staff Engineer at Tuna Software Solution** and **Lead Software Engineer Contractor at Science & Humans**), and **4 standout self-built production platforms** (**StrawHatDevs**, **ChimeFlow**, **ENVault**, and **IncidentLens AI**).
+
+### 1. Principal Software Engineer Resume (`2026-11-09_Principal_Software_Engineer_Resume_Santheepkumar_V`)
+> **Best for**: Principal Software Engineer, Principal Systems Architect, Distinguished IC, and Founding Principal Engineer roles.
+
+| Format | File |
+| :--- | :--- |
+| **PDF (Print & Direct Apply)** | [`2026-11-09_Principal_Software_Engineer_Resume_Santheepkumar_V.pdf`](./2026-11-09_Principal_Software_Engineer_Resume_Santheepkumar_V.pdf) |
+| **DOCX (ATS & Recruiter Portals)** | [`2026-11-09_Principal_Software_Engineer_Resume_Santheepkumar_V.docx`](./2026-11-09_Principal_Software_Engineer_Resume_Santheepkumar_V.docx) |
+| **Markdown** | [`2026-11-09_Principal_Software_Engineer_Resume_Santheepkumar_V.md`](./2026-11-09_Principal_Software_Engineer_Resume_Santheepkumar_V.md) |
+| **HTML** | [`2026-11-09_Principal_Software_Engineer_Resume_Santheepkumar_V.html`](./2026-11-09_Principal_Software_Engineer_Resume_Santheepkumar_V.html) |
+
+### 2. Technical Lead Resume (`2026-11-09_Technical_Lead_Resume_Santheepkumar_V`)
+> **Best for**: Technical Lead, Engineering Lead, Lead Full-Stack / Platform Architect, and Engineering Manager (Hands-on) roles.
+
+| Format | File |
+| :--- | :--- |
+| **PDF (Print & Direct Apply)** | [`2026-11-09_Technical_Lead_Resume_Santheepkumar_V.pdf`](./2026-11-09_Technical_Lead_Resume_Santheepkumar_V.pdf) |
+| **DOCX (ATS & Recruiter Portals)** | [`2026-11-09_Technical_Lead_Resume_Santheepkumar_V.docx`](./2026-11-09_Technical_Lead_Resume_Santheepkumar_V.docx) |
+| **Markdown** | [`2026-11-09_Technical_Lead_Resume_Santheepkumar_V.md`](./2026-11-09_Technical_Lead_Resume_Santheepkumar_V.md) |
+| **HTML** | [`2026-11-09_Technical_Lead_Resume_Santheepkumar_V.html`](./2026-11-09_Technical_Lead_Resume_Santheepkumar_V.html) |
+
+### 3. Forward Deployed Engineer Resume (`2026-11-09_Forward_Deployed_Engineer_Resume_Santheepkumar_V`)
+> **Best for**: Forward Deployed Software Engineer (FDE), Solutions Architect, Customer-Facing Lead Engineer, and Zero-to-One Product Delivery Engineer roles.
+
+| Format | File |
+| :--- | :--- |
+| **PDF (Print & Direct Apply)** | [`2026-11-09_Forward_Deployed_Engineer_Resume_Santheepkumar_V.pdf`](./2026-11-09_Forward_Deployed_Engineer_Resume_Santheepkumar_V.pdf) |
+| **DOCX (ATS & Recruiter Portals)** | [`2026-11-09_Forward_Deployed_Engineer_Resume_Santheepkumar_V.docx`](./2026-11-09_Forward_Deployed_Engineer_Resume_Santheepkumar_V.docx) |
+| **Markdown** | [`2026-11-09_Forward_Deployed_Engineer_Resume_Santheepkumar_V.md`](./2026-11-09_Forward_Deployed_Engineer_Resume_Santheepkumar_V.md) |
+| **HTML** | [`2026-11-09_Forward_Deployed_Engineer_Resume_Santheepkumar_V.html`](./2026-11-09_Forward_Deployed_Engineer_Resume_Santheepkumar_V.html) |
+
+### 4. Staff Software Engineer Resume (`2026-11-09_Staff_Software_Engineer_Resume_Santheepkumar_V`)
+> **Best for**: Staff Software Engineer, Staff Full-Stack / Cloud Engineer, and End-to-End Systems Engineer roles.
+
+| Format | File |
+| :--- | :--- |
+| **PDF (Print & Direct Apply)** | [`2026-11-09_Staff_Software_Engineer_Resume_Santheepkumar_V.pdf`](./2026-11-09_Staff_Software_Engineer_Resume_Santheepkumar_V.pdf) |
+| **DOCX (ATS & Recruiter Portals)** | [`2026-11-09_Staff_Software_Engineer_Resume_Santheepkumar_V.docx`](./2026-11-09_Staff_Software_Engineer_Resume_Santheepkumar_V.docx) |
+| **Markdown** | [`2026-11-09_Staff_Software_Engineer_Resume_Santheepkumar_V.md`](./2026-11-09_Staff_Software_Engineer_Resume_Santheepkumar_V.md) |
+| **HTML** | [`2026-11-09_Staff_Software_Engineer_Resume_Santheepkumar_V.html`](./2026-11-09_Staff_Software_Engineer_Resume_Santheepkumar_V.html) |
+
+### 5. Senior Software Engineer Resume (`2026-11-09_Senior_Software_Engineer_Resume_Santheepkumar_V`)
+> **Best for**: Senior Software Engineer, Senior Full-Stack Engineer (React / Next.js / Go / Node.js / Bun), and Senior Product & Infrastructure Engineer roles.
+
+| Format | File |
+| :--- | :--- |
+| **PDF (Print & Direct Apply)** | [`2026-11-09_Senior_Software_Engineer_Resume_Santheepkumar_V.pdf`](./2026-11-09_Senior_Software_Engineer_Resume_Santheepkumar_V.pdf) |
+| **DOCX (ATS & Recruiter Portals)** | [`2026-11-09_Senior_Software_Engineer_Resume_Santheepkumar_V.docx`](./2026-11-09_Senior_Software_Engineer_Resume_Santheepkumar_V.docx) |
+| **Markdown** | [`2026-11-09_Senior_Software_Engineer_Resume_Santheepkumar_V.md`](./2026-11-09_Senior_Software_Engineer_Resume_Santheepkumar_V.md) |
+| **HTML** | [`2026-11-09_Senior_Software_Engineer_Resume_Santheepkumar_V.html`](./2026-11-09_Senior_Software_Engineer_Resume_Santheepkumar_V.html) |
 
 ---
 
-## Key Differentiators & Highlights
+## Universal Cover Letter & LinkedIn Optimization Guide
 
-- **End-to-End Ownership**: Whiteboard architecture, reactive frontends (React/Next.js), backend microservices (Node/NestJS/Go), cloud infrastructure (AWS/GCP/Docker/K8s), and automated CI/CD pipelines (GitHub Actions/Bitbucket Pipelines).
-- **Rapid MVP Delivery**: Solo delivery of the Chuck E. Cheese enterprise customer experience web platform in 2 months (compressing an 8-month baseline by 75%).
-- **IoT & Hardware Peripherals**: Engineered Android kiosk software (Pony Up) with payment terminals, receipt printers, and cash drawers, followed by cloud web migration.
-- **Straw Hat Devs Ecosystem**:
-  - **Learning Platform**: [strawhatdevs.com](https://strawhatdevs.com) — Modern developer education platform built end-to-end with Next.js, Supabase, PostgreSQL, Sanity, and Axiom.
-  - **YouTube Channel**: [youtube.com/@StrawHatDevs](https://youtube.com/@StrawHatDevs) — 200+ deep-dive videos on software architecture, microservices, cloud deployments, and full-stack systems.
+| Document | PDF | DOCX | Markdown | HTML |
+| :--- | :--- | :--- | :--- | :--- |
+| **Common Cover Letter** | [`.pdf`](./2026-11-09_Common_Cover_Letter_Santheepkumar_V.pdf) | [`.docx`](./2026-11-09_Common_Cover_Letter_Santheepkumar_V.docx) | [`.md`](./2026-11-09_Common_Cover_Letter_Santheepkumar_V.md) | [`.html`](./2026-11-09_Common_Cover_Letter_Santheepkumar_V.html) |
+| **LinkedIn Profile Copy & Guide** | [`.pdf`](./2026-11-09_LinkedIn_Profile_Santheepkumar_V.pdf) | — | [`.md`](./2026-11-09_LinkedIn_Profile_Santheepkumar_V.md) | [`.html`](./2026-11-09_LinkedIn_Profile_Santheepkumar_V.html) |
+| **Original Baseline Resume** | — | [`2026-09-22_Original_Resume_Santheepkumar_V.docx`](./2026-09-22_Original_Resume_Santheepkumar_V.docx) | — | — |
 
 ---
 
-## Regeneration Scripts
+## Regenerating the Full Suite
 
-To recompile the Word DOCX files at any time:
+To rebuild all 5 resume roles (`.md`, `.html`, `.docx`), the Universal Cover Letter, and the LinkedIn Profile Guide from a single source of truth:
 
 ```bash
-# Generate both Technical Lead and Forward Deployed Engineer Word resumes:
-python3 generate_dual_docx.py
-
-# Generate the Staff Software Engineer Word resume:
-python3 generate_docx.py
-
-# Generate the Universal Common Cover Letter Word document:
-python3 generate_cover_letter_docx.py
+python3 build_all_suite.py
 ```
-
----
-
-## Contact
-
-- **Email**: [devsantheep@gmail.com](mailto:devsantheep@gmail.com)
-- **LinkedIn**: [linkedin.com/in/santheepkumar](https://linkedin.com/in/santheepkumar)
-- **GitHub**: [github.com/Santheepkumar](https://github.com/Santheepkumar)
-- **Portfolio**: [sk.strawhatdevs.com](https://sk.strawhatdevs.com)
-- **Learning Platform**: [strawhatdevs.com](https://strawhatdevs.com)
-- **YouTube**: [youtube.com/@StrawHatDevs](https://youtube.com/@StrawHatDevs)
